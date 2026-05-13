@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Courses — The Curriculum</title>
+  <meta name="description" content="All ten courses in The Curriculum: AI, money, code, writing, speaking, business, data, language, mental health, and critical thinking.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22 font-family=%22serif%22>✦</text></svg>">
+</head>
+<body class="page-courses">
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">
+        The Curriculum
+        <span class="nav-brand-mark">✦ 2026</span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="6" x2="21" y2="6"/>
+          <line x1="3" y1="12" x2="21" y2="12"/>
+          <line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="index-hero">
+    <div class="container">
+      <h1>All ten <em>courses.</em></h1>
+      <p>Take them in order if you're starting from scratch. Cherry-pick if you have specific goals. The point is to finish what you start.</p>
+    </div>
+  </section>
+
+  <!-- READING PATHS -->
+  <section class="paths">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">How to <em>read</em> this</h2>
+        <div class="section-meta">Four paths through the material</div>
+      </div>
+      <div class="paths-grid">
+        <div class="path-card reveal">
+          <div class="path-card-num">PATH 01</div>
+          <h3>The full run</h3>
+          <p>Start at Course 01, work through to Course 10. One month per course at a sustainable pace. The intended path.</p>
+          <div class="path-card-courses">01 → 02 → 03 → 04 → 05 → 06 → 07 → 08 → 09 → 10</div>
+        </div>
+        <div class="path-card reveal reveal-delay-1">
+          <div class="path-card-num">PATH 02</div>
+          <h3>The builder</h3>
+          <p>For starting a business or shipping side projects. Code, writing, speaking, sales, mental resilience.</p>
+          <div class="path-card-courses">01 · 03 · 04 · 05 · 06 · 09</div>
+        </div>
+        <div class="path-card reveal reveal-delay-2">
+          <div class="path-card-num">PATH 03</div>
+          <h3>The Canadian path</h3>
+          <p>For teens eyeing Canadian Francophone Mobility immigration. Writing, speaking, language, mental health.</p>
+          <div class="path-card-courses">04 · 05 · 08 · 09</div>
+        </div>
+        <div class="path-card reveal reveal-delay-3">
+          <div class="path-card-num">PATH 04</div>
+          <h3>The thinker</h3>
+          <p>For sharpening reasoning, sense-making, and the ability to not get fooled in a noisy world.</p>
+          <div class="path-card-courses">01 · 04 · 07 · 09 · 10</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ALL COURSES -->
+  <section class="courses-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Every <em>course</em></h2>
+        <div class="section-meta">Ten in total</div>
+      </div>
+      <div class="course-list" data-courses="all"></div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>The <em>Curriculum</em></h3>
+          <p>Ten courses for the decade ahead. Written peer-to-peer for teen learners. Free, always.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigate</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="courses.html">All courses</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Begin</h4>
+          <ul>
+            <li><a href="course.html?id=01">01 · AI Literacy</a></li>
+            <li><a href="course.html?id=02">02 · Money</a></li>
+            <li><a href="course.html?id=09">09 · Mental Health</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 · Built for the next generation</p>
+        <p>Knowledge compounds.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="marked.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

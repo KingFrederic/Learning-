@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Course — The Curriculum</title>
+  <meta name="description" content="A course in The Curriculum.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22 font-family=%22serif%22>✦</text></svg>">
+</head>
+<body class="page-course">
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">
+        The Curriculum
+        <span class="nav-brand-mark">✦ 2026</span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="6" x2="21" y2="6"/>
+          <line x1="3" y1="12" x2="21" y2="12"/>
+          <line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- COURSE PAGE -->
+  <section class="course-page">
+    <div class="container">
+      
+      <!-- Breadcrumb gets filled by script -->
+      <div class="course-breadcrumb"></div>
+      
+      <!-- Hero gets filled by script -->
+      <div class="course-hero"></div>
+      
+      <div class="course-body-wrap">
+        
+        <!-- Sidebar TOC -->
+        <aside class="course-toc">
+          <div class="course-toc-label">In this course</div>
+          <ol class="course-toc-list"></ol>
+        </aside>
+        
+        <!-- Main content -->
+        <article>
+          <div class="course-content">
+            <div class="loading">Loading course</div>
+          </div>
+          
+          <!-- Prev/next nav -->
+          <nav class="course-nav"></nav>
+        </article>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>The <em>Curriculum</em></h3>
+          <p>Ten courses for the decade ahead. Written peer-to-peer for teen learners. Free, always.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigate</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="courses.html">All courses</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Begin</h4>
+          <ul>
+            <li><a href="course.html?id=01">01 · AI Literacy</a></li>
+            <li><a href="course.html?id=02">02 · Money</a></li>
+            <li><a href="course.html?id=09">09 · Mental Health</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 · Built for the next generation</p>
+        <p>Knowledge compounds.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="marked.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
