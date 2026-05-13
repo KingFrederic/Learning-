@@ -176,7 +176,8 @@ const TRANSLATIONS = {
 };
 
 // Current language — persisted across pages
-let currentLang = localStorage.getItem('lang') || 'en';
+let currentLang = 'en';
+try { currentLang = localStorage.getItem('lang') || 'en'; } catch (e) { /* storage blocked */ }
 
 function t(key) {
   return (TRANSLATIONS[currentLang] && TRANSLATIONS[currentLang][key])
@@ -411,13 +412,14 @@ function initNav() {
     links.classList.toggle('open');
     toggle.setAttribute('aria-expanded', links.classList.contains('open'));
   });
+}
 
+function initLangToggle() {
   const langBtn = document.getElementById('lang-toggle');
-  if (langBtn) {
-    langBtn.addEventListener('click', () => {
-      setLanguage(currentLang === 'en' ? 'fr' : 'en');
-    });
-  }
+  if (!langBtn) return;
+  langBtn.addEventListener('click', () => {
+    setLanguage(currentLang === 'en' ? 'fr' : 'en');
+  });
 }
 
 // =========================================================
@@ -455,7 +457,7 @@ function renderCourseList(targetSelector, opts = {}) {
   const html = COURSES.slice(skipFirst, skipFirst + limit).map((c, i) => {
     const title = isFr ? (c.titleFr || c.title) : c.title;
     const blurb = isFr ? (c.blurbFr || c.blurb) : c.blurb;
-    const agesLabel = t('card.ages') || (isFr ? 'Âges' : 'Ages');
+    const agesLabel = t('course.meta.ages');
     const modulesLabel = t('course.meta.modules');
     const hours = isFr ? (c.hoursFr || c.hours) : c.hours;
 
@@ -653,6 +655,7 @@ function renderCourseNav(currentCourse) {
 // =========================================================
 document.addEventListener('DOMContentLoaded', () => {
   initNav();
+  initLangToggle();
   applyTranslations();
   initScrollReveal();
 
