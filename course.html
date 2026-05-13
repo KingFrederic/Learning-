@@ -25,41 +25,42 @@
         </svg>
       </button>
       <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="courses.html">Courses</a></li>
-        <li><a href="about.html">About</a></li>
+        <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+        <li><a href="courses.html" data-i18n="nav.courses">Courses</a></li>
+        <li><a href="about.html" data-i18n="nav.about">About</a></li>
       </ul>
+      <button class="lang-toggle" id="lang-toggle" aria-label="Switch language">FR</button>
     </div>
   </nav>
 
   <!-- COURSE PAGE -->
   <section class="course-page">
     <div class="container">
-      
+
       <!-- Breadcrumb gets filled by script -->
       <div class="course-breadcrumb"></div>
-      
+
       <!-- Hero gets filled by script -->
       <div class="course-hero"></div>
-      
+
       <div class="course-body-wrap">
-        
+
         <!-- Sidebar TOC -->
         <aside class="course-toc">
-          <div class="course-toc-label">In this course</div>
+          <div class="course-toc-label" data-i18n="course.toc.label">In this course</div>
           <ol class="course-toc-list"></ol>
         </aside>
-        
+
         <!-- Main content -->
         <article>
           <div class="course-content">
-            <div class="loading">Loading course</div>
+            <div class="loading" data-i18n="course.loading">Loading course</div>
           </div>
-          
+
           <!-- Prev/next nav -->
           <nav class="course-nav"></nav>
         </article>
-        
+
       </div>
     </div>
   </section>
@@ -70,28 +71,28 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <h3>The <em>Curriculum</em></h3>
-          <p>Ten courses for the decade ahead. Written peer-to-peer for teen learners. Free, always.</p>
+          <p data-i18n="footer.tagline">Ten courses for the decade ahead. Written peer-to-peer for teen learners. Free, always.</p>
         </div>
         <div class="footer-col">
-          <h4>Navigate</h4>
+          <h4 data-i18n="footer.navigate">Navigate</h4>
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="courses.html">All courses</a></li>
-            <li><a href="about.html">About</a></li>
+            <li><a href="index.html" data-i18n="footer.home">Home</a></li>
+            <li><a href="courses.html" data-i18n="footer.all-courses">All courses</a></li>
+            <li><a href="about.html" data-i18n="footer.about">About</a></li>
           </ul>
         </div>
         <div class="footer-col">
-          <h4>Begin</h4>
+          <h4 data-i18n="footer.begin">Begin</h4>
           <ul>
-            <li><a href="course.html?id=01">01 · AI Literacy</a></li>
-            <li><a href="course.html?id=02">02 · Money</a></li>
-            <li><a href="course.html?id=09">09 · Mental Health</a></li>
+            <li><a href="course.html?id=01" data-i18n="footer.ai">01 · AI Literacy</a></li>
+            <li><a href="course.html?id=02" data-i18n="footer.money">02 · Money</a></li>
+            <li><a href="course.html?id=09" data-i18n="footer.mental">09 · Mental Health</a></li>
           </ul>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>© 2026 · Built for the next generation</p>
-        <p>Knowledge compounds.</p>
+        <p data-i18n="footer.copy">© 2026 · Built for the next generation</p>
+        <p data-i18n="footer.close">Knowledge compounds.</p>
       </div>
     </div>
   </footer>

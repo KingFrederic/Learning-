@@ -28,37 +28,38 @@
         </svg>
       </button>
       <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="courses.html">Courses</a></li>
-        <li><a href="about.html">About</a></li>
+        <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+        <li><a href="courses.html" data-i18n="nav.courses">Courses</a></li>
+        <li><a href="about.html" data-i18n="nav.about">About</a></li>
       </ul>
+      <button class="lang-toggle" id="lang-toggle" aria-label="Switch language">FR</button>
     </div>
   </nav>
 
   <!-- HERO -->
   <section class="hero">
     <div class="container">
-      <div class="hero-eyebrow">A curriculum for the next decade</div>
-      <h1 class="hero-title">Ten courses<br>nobody taught<br>you in <em>school.</em></h1>
-      <p class="hero-lede">
+      <div class="hero-eyebrow" data-i18n="home.eyebrow">A curriculum for the next decade</div>
+      <h1 class="hero-title" data-i18n="home.title">Ten courses<br>nobody taught<br>you in <em>school.</em></h1>
+      <p class="hero-lede" data-i18n="home.lede">
         AI literacy. Money. Code. Writing. Speaking. Business. Data. Languages. Mental health. Clear thinking. The skills that matter most between now and 2030 — written peer-to-peer, built for teenagers who actually plan to do something with their lives.
       </p>
       <div class="hero-meta">
         <div class="hero-meta-item">
           <div class="hero-meta-num">10</div>
-          <div class="hero-meta-label">Deep courses</div>
+          <div class="hero-meta-label" data-i18n="home.meta.courses">Deep courses</div>
         </div>
         <div class="hero-meta-item">
           <div class="hero-meta-num">80</div>
-          <div class="hero-meta-label">Modules</div>
+          <div class="hero-meta-label" data-i18n="home.meta.modules">Modules</div>
         </div>
         <div class="hero-meta-item">
           <div class="hero-meta-num">200+</div>
-          <div class="hero-meta-label">Exercises</div>
+          <div class="hero-meta-label" data-i18n="home.meta.exercises">Exercises</div>
         </div>
         <div class="hero-meta-item">
           <div class="hero-meta-num">∞</div>
-          <div class="hero-meta-label">Free, always</div>
+          <div class="hero-meta-label" data-i18n="home.meta.free">Free, always</div>
         </div>
       </div>
     </div>
@@ -68,8 +69,8 @@
   <section class="intro-band">
     <div class="container">
       <div class="intro-band-content">
-        <div class="intro-band-mark">What you're holding</div>
-        <p class="intro-band-text">
+        <div class="intro-band-mark" data-i18n="home.band.mark">What you're holding</div>
+        <p class="intro-band-text" data-i18n="home.band.text">
           Not a textbook. Not a YouTube playlist. A <em>real curriculum</em> — built the way someone would teach their own niece, if they actually cared whether she learned.
         </p>
       </div>
@@ -79,15 +80,15 @@
   <!-- FEATURED COURSE -->
   <section class="featured">
     <div class="container">
-      <div class="featured-label">Start here</div>
+      <div class="featured-label" data-i18n="home.featured.label">Start here</div>
       <div class="featured-grid">
         <div class="featured-num reveal">0<em>1</em></div>
         <div class="featured-content reveal reveal-delay-1">
           <h2>AI Literacy &amp; <em>Prompt Engineering</em></h2>
-          <p>You're not going to "learn AI" the way someone learned to type in 1995. Typing was a skill. AI is more like electricity — it'll be inside everything you touch, and the question is whether you use it like a power user or get used by it.</p>
-          <p>This course makes you the first kind.</p>
+          <p data-i18n="home.featured.p1">You're not going to "learn AI" the way someone learned to type in 1995. Typing was a skill. AI is more like electricity — it'll be inside everything you touch, and the question is whether you use it like a power user or get used by it.</p>
+          <p data-i18n="home.featured.p2">This course makes you the first kind.</p>
           <a href="course.html?id=01" class="featured-cta">
-            Begin Course 01
+            <span data-i18n="home.featured.cta">Begin Course 01</span>
             <span class="featured-cta-arrow">→</span>
           </a>
         </div>
@@ -99,8 +100,8 @@
   <section class="courses-section">
     <div class="container">
       <div class="section-header">
-        <h2 class="section-title">The <em>rest</em> of the curriculum</h2>
-        <div class="section-meta">Courses 02 — 10</div>
+        <h2 class="section-title" data-i18n="home.rest.title">The <em>rest</em> of the curriculum</h2>
+        <div class="section-meta" data-i18n="home.rest.meta">Courses 02 — 10</div>
       </div>
       <div class="course-list" data-courses="rest"></div>
     </div>
@@ -112,28 +113,28 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <h3>The <em>Curriculum</em></h3>
-          <p>Ten courses for the decade ahead. Written peer-to-peer for teen learners. Free, always.</p>
+          <p data-i18n="footer.tagline">Ten courses for the decade ahead. Written peer-to-peer for teen learners. Free, always.</p>
         </div>
         <div class="footer-col">
-          <h4>Navigate</h4>
+          <h4 data-i18n="footer.navigate">Navigate</h4>
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="courses.html">All courses</a></li>
-            <li><a href="about.html">About</a></li>
+            <li><a href="index.html" data-i18n="footer.home">Home</a></li>
+            <li><a href="courses.html" data-i18n="footer.all-courses">All courses</a></li>
+            <li><a href="about.html" data-i18n="footer.about">About</a></li>
           </ul>
         </div>
         <div class="footer-col">
-          <h4>Begin</h4>
+          <h4 data-i18n="footer.begin">Begin</h4>
           <ul>
-            <li><a href="course.html?id=01">01 · AI Literacy</a></li>
-            <li><a href="course.html?id=02">02 · Money</a></li>
-            <li><a href="course.html?id=09">09 · Mental Health</a></li>
+            <li><a href="course.html?id=01" data-i18n="footer.ai">01 · AI Literacy</a></li>
+            <li><a href="course.html?id=02" data-i18n="footer.money">02 · Money</a></li>
+            <li><a href="course.html?id=09" data-i18n="footer.mental">09 · Mental Health</a></li>
           </ul>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>© 2026 · Built for the next generation</p>
-        <p>Knowledge compounds.</p>
+        <p data-i18n="footer.copy">© 2026 · Built for the next generation</p>
+        <p data-i18n="footer.close">Knowledge compounds.</p>
       </div>
     </div>
   </footer>
