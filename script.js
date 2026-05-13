@@ -529,11 +529,23 @@ async function loadCourse() {
     `;
   }
 
-  // Load the MD
+  // Load the MD — try the language-specific file, fall back to English
   try {
-    const response = await fetch(`courses/${course.slug}.md`);
-    if (!response.ok) throw new Error('Failed to load course');
-    const md = await response.text();
+    let md;
+    if (currentLang === 'fr') {
+      const frRes = await fetch(`courses/${course.slug}.fr.md`);
+      if (frRes.ok) {
+        md = await frRes.text();
+      } else {
+        const enRes = await fetch(`courses/${course.slug}.md`);
+        if (!enRes.ok) throw new Error('Failed to load course');
+        md = await enRes.text();
+      }
+    } else {
+      const enRes = await fetch(`courses/${course.slug}.md`);
+      if (!enRes.ok) throw new Error('Failed to load course');
+      md = await enRes.text();
+    }
 
     // Render
     const contentEl = document.querySelector('.course-content');
